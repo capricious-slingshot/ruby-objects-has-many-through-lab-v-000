@@ -20,6 +20,8 @@ class Patient
   end
 
   def doctors
+    binding.pry
     Appointment.all.collect {|a| a.doctor}
+
   end
 end
