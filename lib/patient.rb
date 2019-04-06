@@ -21,6 +21,5 @@ class Patient
 
   def doctors
     Appointment.all.collect {|a| a.doctor.name}.uniq
-
   end
 end
