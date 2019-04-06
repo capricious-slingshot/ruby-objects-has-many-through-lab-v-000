@@ -16,6 +16,7 @@ class Doctor
   end
 
   def appointments
-    Appointment.all.each {|a| nil}
+    # Appointment.all.each {|a| a.doctor == self}
+    [nil]
   end
 end
