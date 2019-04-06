@@ -1,4 +1,5 @@
 class Patient
+  @@all = []
   attr_reader :name
 
   def initialize(name)
@@ -11,5 +12,9 @@ class Patient
 
   def appointments
     Appointment.all.select{|a| a.patient == self}
+  end
+
+  def self.all
+    @@all
   end
 end
