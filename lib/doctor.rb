@@ -18,4 +18,8 @@ class Doctor
   def appointments
     Appointment.all.each {|a| a.doctor == self}
   end
+
+  def patients
+    
+  end
 end
