@@ -21,7 +21,7 @@ class Patient
 
   def doctors
     binding.pry
-    Appointment.all.collect {|a| a.doctor}
+    Appointment.all.collect {|a| a.doctor}.uniq
 
   end
 end
