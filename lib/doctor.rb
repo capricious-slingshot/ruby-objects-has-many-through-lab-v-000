@@ -16,6 +16,6 @@ class Doctor
   end
 
   def appointments
-    Appointment.all.each {|a| a.doctor.include?(self)}
+    Appointment.all.each {|a| nil}
   end
 end
